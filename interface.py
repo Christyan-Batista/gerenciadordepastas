@@ -13,6 +13,7 @@ class App:
         self.interface()
         self.botoes()
         self.entrys()
+        self.checkbox()
         self.window.mainloop()
 
     def interface(self):
@@ -34,5 +35,15 @@ class App:
     def entrys(self):
         self.inputcliente = Entry(self.window, font=('Open Sans Light', 15), justify=LEFT, bd=2)
         self.inputcliente.place(width='400', height= '44',x=50, y=180)
+
+    def checkbox(self):
+        self.sb = Checkbutton(self.window, text='S.B')
+        self.sb.place(x=50,y=250)
+        self.tg = Checkbutton(self.window, text='T.G')
+        self.tg.place(x=168,y=250)
+        self.la = Checkbutton(self.window, text='L.A')
+        self.la.place(x=286,y=250)
+        self.dt = Checkbutton(self.window, text='D.T')
+        self.dt.place(x=405,y=250)
 
 App()
